@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-color: #747264;
+}
+
+.main{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-rows: 3fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  grid-template-areas: 
+  "h1 h1 h1 h1"
+  "card1 card data data1";
+}
+h1{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s ease;
+  grid-area: h1;
+}
+/*FORM*/
+.card{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 0.8fr;
+  height: 1.5fr;
+  border-radius: 21px;
+  background-color: #E0CCBE;
+  padding: 2rem 3rem;
+  grid-area: card;
+  
+}
+
+h2{
+  color: #3C3633;
+}
+
+.judul{
+  color: #31363F;
+  font-size: 1rem;
+}
+
+.txt{
+  width: 300px;
+  height: 35px;
+  border-radius: 10px;
+  background: #d1d1d1;
+  box-shadow: inset 12px 12px 24px #7b7b7b,
+          inset -12px -12px 24px #ffffff;
+  border: 1px solid #ffffff;;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-left: 25px;
+  padding: 5px;
+}
+
+.txt-r{
+  font-size: 14px !important;
+  cursor: pointer;
+}
+
+.txtarea{
+  border-radius: 10px;
+  background: #d1d1d1;
+  box-shadow: inset 12px 12px 24px #7b7b7b,
+          inset -12px -12px 24px #ffffff;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 5px;
+  margin-left: 25px;
+  width: 300px;
+  height: 100px;
+}
+
+.tb{
+  text-align: center;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+}
+
+.label{
+  text-align: left;
+}
+
+.btn{
+  width: 100px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 21px;
+  background-color: #3C3633;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #ffffff;
+  border: 1px solid #3C3633;
+  color: #3C3633;
+}
+
+/*BATAS FORM*/
+
+/*TABEL DATA*/
+.data{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 1fr;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  grid-area: data;
+  margin-top: 10px;
+}
+
+thead{
+background-color: #3C3633;
+color: rgb(255, 255, 255);
+}
+
+thead:hover{
+background-color: #E0CCBE;
+color: #31363F;
+}
+
+.tdata{
+background-color: white;
+}
+
+.tdata:hover{
+background-color: #E0CCBE;
+}
+
+.edit{
+width: 50px;
+height: 30px;
+border-radius: 5px;
+border: none;
+margin: 5px;
+background-color: rgb(70, 70, 255);
+color: white;
+cursor: pointer;
+}
+
+.hapus{
+width: 50px;
+height: 30px;
+border-radius: 5px;
+border: none;
+margin: 5px;
+background-color: rgb(255, 0, 0);
+color: white ;
+cursor: pointer;
+}
+
+.hapus:hover{
+background-color: rgb(230, 151, 151);
+color: black;
+}
+/*BATAS TABEL */
+
+@media (max-width: 900px) {
+.main{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-rows: 3fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  grid-template-areas: 
+  "h1 h1 h1 h1"
+  "card card card card"
+  "data data data data";
+}
+
+.card{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 1fr;
+  height: 1.5fr;
+  border-radius: 21px;
+  background-color: #E0CCBE;
+  padding: 2rem 3rem;
+  grid-area: card;
+}
+
+.data{
+  font-size: 12px;
+  width: 1fr;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-top: 10px;
+}
+}

@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-image: url(assets/kampus.jpg);
+    background-size: cover;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+  }
+  
+  .content h1 {
+    font-family: 'tranjan color';
+    font-size: 9rem;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    transition: all 0.5s ease;
+    text-align: center;
+  }
+
+  .content h1:hover{
+    -webkit-text-stroke: 1px #E0CCBE;
+  }
+
+  p{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  p:hover{
+    color: #E0CCBE;
+  }
+
+  @media (max-width: 900px) {
+    .content h1 {
+      font-size: 7rem;
+      text-align: center;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+    section{
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .content h1 {
+      font-size: 5rem;
+      text-align: center;
+    }
+    p{
+      font-size: 1rem;
+    }
+    section{
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .content h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+    p{
+      font-size: 0.8rem;
+    }
+    section{
+      align-items: center;
+    }
+  }
